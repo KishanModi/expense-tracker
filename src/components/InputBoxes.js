@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { InputField } from './InputField';
-
+import './Input.css';
 export const InputBoxes = (props) => {
 	const [price, updatePrice] = useState(0);
 	const [itemName, updateName] = useState('');

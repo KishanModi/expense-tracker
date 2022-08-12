@@ -1,14 +1,44 @@
 .Header-div {
 	display: flex;
 	flex-direction: column;
+	width: 100%;
 }
 
 .balance-div {
 	display: flex;
 	justify-content: space-between;
 }
-
-h2,h3{
+.Heading-box {
+	background-color: #ffafe7;
+	margin: 20px 0px;
+	width: 100%;
+}
+.Heading-box h1 {
+	margin: 0px;
+	text-align: center;
+}
+h2,
+h3 {
 	margin: 0px;
 	padding: 0px;
+}
+
+.total-div,
+.balance-div {
+	margin: 0px 40px;
+}
+.balance-div {
+	margin: 10px 40px;
+	margin-bottom: 0px;
+}
+
+#incExp {
+	margin: 0px;
+	font-size: 1em;
+}
+
+#totalbalance,
+#money-value {
+	margin: 0px;
+	font-size: 2em;
 }

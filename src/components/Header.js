@@ -1,7 +1,6 @@
 import React from 'react';
 import { TotalBalance } from './TotalBalance';
 import { IncomeExpense } from './IncomeExpense';
-
 import './Header.css';
 export const Header = (props) => {
 	return (

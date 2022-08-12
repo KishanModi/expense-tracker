@@ -9,15 +9,18 @@ export const IncomeExpense = (props) => {
 		if (expenses.length !== 0) {
 			const expInc = () => {
 				let inc = expenses
-					.filter((item) => item.price > 0)
+					.filter((item) => item.price < 0)
 					.reduce((acc, i) => parseInt(acc) + parseInt(i.price), 0);
 				updateEarned(inc);
 				let exp = expenses
-					.filter((item) => item.price < 0)
+					.filter((item) => item.price > 0)
 					.reduce((acc, i) => parseInt(acc) + parseInt(i.price), 0);
 				updateSpent(exp);
 			};
 			expInc();
+		} else {
+			updateEarned(0);
+			updateSpent(0);
 		}
 	}, [expenses]);
 	return (

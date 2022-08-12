@@ -1,16 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600&family=Roboto+Slab:wght@400;600&display=swap');
+::-webkit-scrollbar {
+	display: none;
+}
 html,
 body {
 	padding: 0;
 	margin: 0;
+	background-color: #f7e4e8;
 	width: 100%;
+	font-family: 'Roboto Slab', serif;
+}
+h1 {
+	font-family: 'Inter', sans-serif;
 }
 .container {
-	margin: 0 auto;
-	margin-top: 100px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	border: 1px solid;
-	width: 400px;
+	width: 350px;
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.3);
+	margin: 0 auto;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 600px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+	.container {
+		height: auto;
+		margin-top: 120px;
+	}
+}
+
+@media only screen and (min-width: 600px) {
+	.container {
+		height: auto;
+		margin-top: 120px;
+	}
 }

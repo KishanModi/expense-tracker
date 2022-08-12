@@ -10,6 +10,8 @@ export const TotalBalance = (props) => {
 				return (acc = parseInt(item.price) + parseInt(acc));
 			}, 0);
 			updateSum(amount);
+		} else {
+			updateSum(0);
 		}
 	}, [expenses]);
 	return (

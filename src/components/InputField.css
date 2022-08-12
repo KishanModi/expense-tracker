@@ -1,0 +1,13 @@
+.input-field {
+	text-align: center;
+	width: 100%;
+}
+.input-field h2 {
+	font-size: 1.1em;
+	margin: 4px;
+}
+.input-field input {
+	width: 80%;
+	border-radius: 5px;
+	padding: 4px 10px;
+}

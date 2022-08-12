@@ -1,10 +1,10 @@
 import React from 'react';
-
+import './InputField.css'
 export const InputField = (props) => {
 	const { name, updateItem, updateValue, itemRef } = props;
 	return (
 		<div className="input-field">
-			<h2>{name}</h2>
+			<h2 id="input-names">{name}</h2>
 			<input
 				type="text"
 				placeholder={name}

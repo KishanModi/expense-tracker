@@ -1,13 +1,37 @@
 .history {
-    border: 1px solid;
-    width: 80%;
+	width: 80%;
 	list-style-type: none;
 	display: flex;
 	flex-direction: column;
+	padding: 0px;
+	margin: 0px;
+	margin-top: 20px;
+	padding: 0px 10px;
+	height: 100px;
+	overflow: hidden;
+	overflow-y: scroll;
 }
 
 .listItems {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
+	justify-content: space-between;
+	padding: 5px 0px;
+}
+
+.listItems button {
+	border: none;
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	background-color: #74bab7;
+}
+
+.listItems button:hover {
+	background-color: #51b2ad;
+}
+
+.empty {
+	text-align: center;
+	font-size: 2em;
 }
