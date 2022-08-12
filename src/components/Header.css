@@ -1,0 +1,14 @@
+.Header-div {
+	display: flex;
+	flex-direction: column;
+}
+
+.balance-div {
+	display: flex;
+	justify-content: space-between;
+}
+
+h2,h3{
+	margin: 0px;
+	padding: 0px;
+}

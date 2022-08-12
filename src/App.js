@@ -1,25 +1,31 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import { Header } from './components/Header';
+import { History } from './components/History';
+import { InputBoxes } from './components/InputBoxes';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+	const [expenses, setExpenses] = useState([]);
+	const [id, setId] = useState(0);
+	return (
+		<>
+			<div className="container">
+				<Header expenses={expenses} setExpenses={setExpenses} />
+				<History
+					expenses={expenses}
+					setExpenses={setExpenses}
+					id={id}
+					setId={setId}
+				/>
+				<InputBoxes
+					expenses={expenses}
+					setExpenses={setExpenses}
+					id={id}
+					setId={setId}
+				/>
+			</div>
+		</>
+	);
+};
 
 export default App;
